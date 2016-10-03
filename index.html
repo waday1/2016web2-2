@@ -11,11 +11,17 @@
       $("p").css("color","red");
       }
      );
+    $("toggle").click(function () {
+    $("invisible").toggle(slow);
+    });
     </script>
   </head>
   <body>
     
     <p>色替え</p>
+    
+    <div id="invisible">消えるよ</div>
+    <button id="toggle">押すと消えるよ</button>
     
   </body>
 </html>
