@@ -11,10 +11,11 @@
       $("p").css("color","red");
       }
      );
+      
       $(document).ready(function(){
-        $("button").click(function ("slow") 
+        $("button").click(function () 
           {
-            $("#target").toggle();
+            $("#target").toggle("slow");
           });
         });
     </script>
@@ -24,7 +25,7 @@
     <p>色替え</p>
     
     <div id="target">おはよう</div>
-    <div 　id="target"style="display:none">こんにちは</div>
+    <div style="display:none"　id="target">こんにちは</div>
      <button>押すと変わるよ</button>
     
   </body>
