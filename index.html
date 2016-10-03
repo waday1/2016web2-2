@@ -13,10 +13,17 @@
      );
       
       $(document).ready(function(){
-        $("button").click(function () 
+        
+        $("#button1").click(function () 
           {
             $("div").toggle("slow");
           });
+        
+        $("#button2").click(function () 
+        {
+        $("#hyouzi").slideToggle();
+        });
+        
         });
     </script>
   </head>
@@ -24,11 +31,18 @@
     
     <p>色替え</p>
     
-    <button>押すと変わるよ</button>
+    <button id="button1">押すと変わるよ</button>
     
-    <div id="target">おはよう</div> 
-    <div id="target" style="display:none">こんにちは</div>
+    <p></p>
+    
+    <div>おはよう</div> 
+    <div style="display:none">こんにちは</div>
      
+    <button id="button2">押す</button>
+    
+    <p id="hyouzi">
+      こんばんは
+    </p>
     
   </body>
 </html>
