@@ -12,17 +12,20 @@
       }
      );
       
-    $("#toggle").on("click",function () {
-    $("#target").toggle("slow");
-    });
+    $("#button").click(function () 
+          {
+          $("#target").toggle("slow");
+          }
+                      );
     </script>
   </head>
   <body>
     
     <p>色替え</p>
     
-    <div id="target">消えるよ</div>
-     <button id="toggle">押すと消えるよ</button>
+    <div id="target">おはよう</div>
+    <div id="target" style="display:none">こんにちは</div>
+     <button id="button">押すと消えるよ</button>
     
   </body>
 </html>
