@@ -11,7 +11,7 @@
       $("p").css("color","red");
       }
      );
-    $("#toggle").click(function () {
+    $("#toggle").on("click",function () {
     $("#invisible").toggle("slow");
     });
     </script>
@@ -20,9 +20,8 @@
     
     <p>色替え</p>
     
-    <button id="toggle">押すと消えるよ</button>
     <div id="invisible">消えるよ</div>
-    
+     <button id="toggle">押すと消えるよ</button>
     
   </body>
 </html>
